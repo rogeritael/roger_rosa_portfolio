@@ -85,8 +85,9 @@
 
         .title_box{
             margin-top: 0;
-            position: absolute;
-            bottom: 80px;
+            position: relative;
+            // bottom: 80px;
+            top: 70%;
 
             h1 {
                 font-size: 32px;
