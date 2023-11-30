@@ -1,0 +1,37 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-626px);
+    }
+}
+
+.infinite_list {
+    position: absolute;
+    bottom: 40px;
+    right: -20px;
+    max-width: 400px;
+    width: 100%;
+    padding: 8px 20px;
+    padding-right: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+
+    &::after {
+        content: '';
+        width: 32px;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(90deg, #0C0B1C 0%, rgba(12, 11, 28, 0.00) 100%);
+        left: 0;
+    }
+
+    .rail {
+        display: flex;
+        gap: 20px;
+        animation: slide 15s linear infinite;
+    }
+}
