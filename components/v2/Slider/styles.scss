@@ -1,0 +1,19 @@
+#slider {
+    // border: 1px solid red;
+    max-width: 950px;
+    // width: 70vw;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 390px;
+    left: 20px;
+    overflow-x: auto;
+    
+    .rail {
+        width: fit-content;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}

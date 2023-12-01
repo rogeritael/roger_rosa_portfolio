@@ -1,0 +1,36 @@
+.service_item {
+    width: 220px;
+    height: 250px;
+    background-color: #151426;
+    border-radius: 8px;
+    padding: 24px 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .rounded {
+        border: 2px solid #721AE7;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+
+        p {
+            opacity: 0.8;
+            font-weight: bold;
+        }
+    }
+
+    .category {
+        font-size: 10px;
+        color: #ffffff80;
+        text-transform: uppercase;
+        border: 1px solid #ffffff80;
+        display: inline-block;
+        width: fit-content;
+        padding: 6px 24px;
+        border-radius: 14px;
+        pointer-events: none;
+    }
+ }

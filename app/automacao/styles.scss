@@ -6,3 +6,21 @@
     // padding: 20px;
     padding-top: 105px;
 }
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0C0B1C;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #721AE7;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: #8D1AE7;
+    }
+}

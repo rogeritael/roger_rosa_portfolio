@@ -1,4 +1,29 @@
 #services {
-    background-color: aliceblue;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+
+    // mesmos estilos do slider para deixar alinhado
+    h2 {
+        max-width: 600px;
+        width: 100%;
+        position: absolute;
+        top: calc(50% - 200px);
+        transform: translateY(-50%);
+        left: 20px;
+        font-size: 32px;
+    }
+
+    .bg {
+        width: 500px;
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
