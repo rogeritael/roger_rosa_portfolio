@@ -24,3 +24,17 @@
         background-color: #8D1AE7;
     }
 }
+
+@media(max-width: 768px){
+    *::-webkit-scrollbar {
+        display: none;
+    }
+    
+    *::-webkit-scrollbar-track {
+        display: none;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
