@@ -1,0 +1,71 @@
+#form_container {
+    max-width: 360px;
+
+    .budget_button {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .bullet {
+        margin-left: 14px;
+        font-size: 14px;
+        margin-bottom: 14px;
+        line-height: 24px;
+
+        &:nth-child(3) {
+            margin-bottom: 28px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        gap: 18px;
+
+        label input,  textarea {
+            width: 100%;
+            border-radius: 4px;
+            color: #7C7C83;
+            border: none;
+            padding-left: 44px;
+        }
+
+        label {
+            width: 100%;
+            height: 44px;
+            position: relative;
+
+            svg {
+                fill: #7C7C83;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 14px;
+            }
+
+            input {
+                background-color: #fff;
+                height: 100%;
+                
+
+                &::placeholder {
+                    color: #7C7C83;
+                }
+            }
+        }
+
+        textarea {
+            height: 200px;
+            padding: 14px;
+            font-size: 14px;
+            resize: none;
+        }
+    }
+}
