@@ -1,3 +1,21 @@
 #form_section {
     min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    
+    figure {
+        min-height: 100vh;
+        width: 100vw;
+        position: absolute;
+        inset: 0;
+
+        img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+        }
+    }
 }
