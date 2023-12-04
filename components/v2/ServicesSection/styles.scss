@@ -28,6 +28,17 @@
     }
 
     @media(max-width: 1024px){
+        // border: 1px solid red;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            position: relative;
+            left: 20px;
+        }
+
         .bg {
             display: none;
         }

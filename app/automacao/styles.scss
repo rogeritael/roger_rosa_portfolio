@@ -26,6 +26,10 @@
 }
 
 @media(max-width: 768px){
+    #automation_page {
+        padding-top: 84px;
+    }
+
     *::-webkit-scrollbar {
         display: none;
     }
@@ -36,5 +40,11 @@
     
     *::-webkit-scrollbar-thumb {
         display: none;
+    }
+}
+
+@media(max-width: 425px){
+    #automation_page {
+        padding-top: 66px;
     }
 }
