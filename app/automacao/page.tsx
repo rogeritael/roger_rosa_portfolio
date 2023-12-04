@@ -4,6 +4,7 @@ import { Header } from "@/components/v2/Header";
 import './styles.scss'
 import { ServicesSection } from "@/components/v2/ServicesSection/page";
 import { FormSection } from "@/components/v2/FormSection";
+import { Footer } from "@/components/v2/Footer";
 
 export default function automacao(){
     return (
@@ -12,6 +13,7 @@ export default function automacao(){
             <Cover />
             <ServicesSection />
             <FormSection />
+            <Footer />
         </main>
     )
 }
