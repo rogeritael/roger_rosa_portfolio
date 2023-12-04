@@ -48,6 +48,12 @@
         right: 180px;
         bottom: 0;
         pointer-events: none;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     @media(max-width: 1024px){

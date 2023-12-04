@@ -31,7 +31,9 @@ export function Cover(){
                 </a>
 
             </div>
-            <Image src={cover} className="background" alt="capa de fundo" />
+            <div className="background">
+                <Image src={cover} alt="capa de fundo" />
+            </div>
             <InfiniteList className='infinite_list_mobile'>
                 <InfiniteListItem label="email" />
                 <InfiniteListItem label="planilhas" />
