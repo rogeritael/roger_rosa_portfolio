@@ -17,6 +17,7 @@ export default function automacao(){
             <Benefits>
                 {benefits.map((benefit) => (
                     <BenefitItem
+                        key={benefit.title}
                         icon={benefit.icon}
                         title={benefit.title}
                         description={benefit.description}
