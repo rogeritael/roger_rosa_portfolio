@@ -37,7 +37,7 @@ const icons = [
 export function BenefitItem({ icon, title, description }: BenefitItemProps){
     return (
         <div className="benefit_item">
-            <figure className="icon">
+            <figure className="icon" >
                 <span className="bg_effect" />
                 <figure className="icon_bg">
                     {icons.map((svg) => (

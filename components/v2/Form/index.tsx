@@ -10,10 +10,10 @@ export function Form(){
                 Como Solicitar <br/> seu Orçamento
             </h2>
             <p className="bullet">
-                &#x2022; Descreva em detalhes o que precisa ser automatizado (quais passos manuais gostaria de automatizar).
+                Descreva em detalhes o que precisa ser automatizado (quais passos manuais gostaria de automatizar).
             </p>
             <p className="bullet">
-                &#x2022; Mencione site e quais passos/processos gostaria de automatizar
+                Mencione site e quais passos/processos gostaria de automatizar
             </p>
             <form className="form">
                 <label>

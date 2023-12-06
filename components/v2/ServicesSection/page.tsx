@@ -4,6 +4,7 @@ import './styles.scss'
 import services_bg from '@/assets/v2/services_bg.png' 
 import { Slider } from '../Slider'
 import { ServiceItem } from '../ServiceItem'
+import { services } from '@/mocks/v2_services'
 
 export function ServicesSection(){
     return (
@@ -13,31 +14,13 @@ export function ServicesSection(){
             </h2>
             
             <Slider>
-                <ServiceItem
-                    position={'01'}
-                    description='Disparos automáticos de emails para clientes de forma rápida.'
-                    category='email'
-                />
-                <ServiceItem
-                    position={'01'}
-                    description='Disparos automáticos de emails para clientes de forma rápida.'
-                    category='email'
-                />
-                <ServiceItem
-                    position={'01'}
-                    description='Disparos automáticos de emails para clientes de forma rápida.'
-                    category='email'
-                />
-                <ServiceItem
-                    position={'01'}
-                    description='Disparos automáticos de emails para clientes de forma rápida.'
-                    category='email'
-                />
-                <ServiceItem
-                    position={'01'}
-                    description='Disparos automáticos de emails para clientes de forma rápida.'
-                    category='email'
-                />
+                {services.map((service, index ) => (
+                    <ServiceItem
+                        position={`0${index+1}`}
+                        description={service.description}
+                        category={service.category}
+                    />
+                ))}
             </Slider>
 
             <figure className='bg'>
