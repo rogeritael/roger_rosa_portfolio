@@ -104,4 +104,32 @@
             }
         }
     }
+
+    @media(max-width:768px){
+        flex-direction: column;
+    }
+
+
+    @media(max-width: 520px){
+        .chip {
+            &:nth-child(3){
+                top: auto;
+                bottom: 100px;
+                left: -10px;
+            }
+    
+            &:nth-child(2){
+                top: auto;
+                bottom: 150px;
+                left: -30px;
+            }
+        }
+
+        .profile_image {
+            .rounded_text {
+                top: -45px;
+                right: -35px;
+            }
+        }
+    }
 }

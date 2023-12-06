@@ -3,9 +3,26 @@
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    padding: 40px;
     gap: 10%;
 
     h2 {
         font-size: 32px;
+    }
+
+    @media(max-width: 1024px){
+        flex-direction: column;
+        gap: 60px;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 460px){
+        h2 {
+            font-size: 24px;
+        }
     }
 }
