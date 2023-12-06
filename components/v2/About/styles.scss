@@ -1,0 +1,11 @@
+#about {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    h2 {
+        font-size: 32px;
+    }
+}

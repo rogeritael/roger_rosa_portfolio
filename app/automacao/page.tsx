@@ -7,6 +7,7 @@ import { Footer } from "@/components/v2/Footer";
 import { Benefits } from "@/components/v2/Benefits";
 import { BenefitItem } from "@/components/v2/BenefitItem";
 import { v2_benefits as benefits } from '@/mocks/v2_benefits';
+import { About } from '@/components/v2/About';
 
 export default function automacao(){
     return (
@@ -24,6 +25,7 @@ export default function automacao(){
                     />
                 ))}
             </Benefits>
+            <About />
             <FormSection />
             <Footer />
         </main>
