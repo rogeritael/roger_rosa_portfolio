@@ -8,7 +8,12 @@ interface ServiceItemProps {
 
 export function ServiceItem({position, description, category}: ServiceItemProps){
     return (
-        <article className="service_item">
+        <article
+            className="service_item"
+            data-aos="fade-in"
+            data-aos-delay={`${(Number(position) -1) * 200}`}
+            data-aos-duration="1000"
+        >
             <figure className='rounded'>
                 <p>{position}</p>
             </figure>

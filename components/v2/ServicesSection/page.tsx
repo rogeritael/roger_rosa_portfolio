@@ -9,8 +9,22 @@ import { services } from '@/mocks/v2_services'
 export function ServicesSection(){
     return (
         <section id="services">
-            <h2>
-                Descubra os serviços que desenvolvemos por aqui
+            <h2
+            >
+                <span
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                >
+                    Descubra os serviços que
+                </span>
+                <br />
+                <span
+                    data-aos="flip-up"
+                    data-aos-delay="500"
+                    data-aos-duration="1000"
+                >
+                    desenvolvemos por aqui
+                </span>
             </h2>
             
             <Slider>

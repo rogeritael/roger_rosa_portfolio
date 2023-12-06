@@ -14,9 +14,23 @@ const userInfos = {
 export function About(){
     return(
         <section id="about">
-            <h2>
-                Mas... <br/>
-                Quem sou eu?
+            <h2 >
+                <span
+                    // style={{ display: 'inline-block' }}
+                    data-aos="flip-up"
+                    data-aos-duration="500"
+                >
+                    Mas... 
+                </span>
+                <br/>
+                <span
+                    // style={{ display: 'inline-block' }}
+                    data-aos="flip-up"
+                    data-aos-delay="500"
+                    data-aos-duration="500"
+                >
+                    Quem sou eu?
+                </span>
             </h2>
             <UserCard
                 subtitle={userInfos.subtitle}

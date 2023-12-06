@@ -7,7 +7,7 @@ import { Chip } from '../Chip'
 interface UserCardProps {
     subtitle: string,
     title: string,
-    bullets: string[]
+    bullets: string[],
 }
 
 export function UserCard({subtitle, title, bullets}: UserCardProps){
@@ -24,9 +24,14 @@ export function UserCard({subtitle, title, bullets}: UserCardProps){
             <div className="infos">
                 <p>{subtitle}</p>
                 <h3>{title}</h3>
-                <ul>
-                    {bullets.map((bullet) => (
-                        <li key={bullet}>
+                <ul >
+                    {bullets.map((bullet, index) => (
+                        <li
+                            key={bullet}
+                            data-aos="fade-up"
+                            // data-aos-delay={`${(index + 1) * 200}`}
+                            data-aos-duration="1000"    
+                        >
                             {bullet}
                         </li>
                     ))}

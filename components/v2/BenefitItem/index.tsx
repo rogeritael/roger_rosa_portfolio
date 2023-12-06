@@ -36,7 +36,11 @@ const icons = [
 
 export function BenefitItem({ icon, title, description }: BenefitItemProps){
     return (
-        <div className="benefit_item">
+        <div
+            className="benefit_item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+        >
             <figure className="icon" >
                 <span className="bg_effect" />
                 <figure className="icon_bg">
