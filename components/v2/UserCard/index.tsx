@@ -26,7 +26,7 @@ export function UserCard({subtitle, title, bullets}: UserCardProps){
                 <h3>{title}</h3>
                 <ul>
                     {bullets.map((bullet) => (
-                        <li>
+                        <li key={bullet}>
                             {bullet}
                         </li>
                     ))}
