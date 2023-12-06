@@ -33,11 +33,11 @@
         border-radius: 50%;
         display: grid;
         place-items: center;
-        animation: pulse 1.5s ease-in alternate infinite;
-
+        
         p {
             opacity: 0.8;
             font-weight: bold;
+            animation: pulse 1.5s ease-in alternate infinite;
         }
     }
 
