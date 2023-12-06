@@ -16,6 +16,7 @@ export function ServicesSection(){
             <Slider>
                 {services.map((service, index ) => (
                     <ServiceItem
+                        key={index}
                         position={`0${index+1}`}
                         description={service.description}
                         category={service.category}
