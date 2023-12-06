@@ -1,0 +1,21 @@
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#index {
+    background-color: #0C0B1C;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: grid;
+    place-content: center;
+
+    .logo {
+        animation: circle 15s linear infinite;
+    }
+}
