@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 #user_card {
     display: flex;
     position: relative;
@@ -16,6 +25,7 @@
         &:nth-child(3){
             top: 250px;
             left: -40px;
+            animation-delay: 600ms;
         }
 
         &:nth-child(2){
@@ -80,6 +90,17 @@
                 opacity: 0.8;
                 font-weight: 200;
                 font-size: 14px;
+                list-style: none;
+
+                &::before {
+                    content: '\2022';
+                    font-size: 24px;
+                    position: relative;
+                    top: 3px;
+                    margin: 0 2px;
+                    color: #721AE7;
+                    animation: pulse 1.5s alternate infinite;
+                }
             }
         }
     }
