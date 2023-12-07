@@ -12,6 +12,7 @@ import { About } from '@/components/v2/About';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import { Limiter } from '@/components/v2/Limiter';
 
 export default function Automacao(){
     useEffect(() => {
@@ -21,23 +22,25 @@ export default function Automacao(){
     },[])
 
     return (
-        <main id="automation_page">
-            <Header />
-            <Cover />
-            <ServicesSection />
-            <Benefits>
-                {benefits.map((benefit, index) => (
-                    <BenefitItem
-                        key={benefit.title}
-                        icon={benefit.icon}
-                        title={benefit.title}
-                        description={benefit.description}
-                    />
-                ))}
-            </Benefits>
-            <About />
-            <FormSection />
-            <Footer />
-        </main>
+        <Limiter>
+            <main id="automation_page">
+                <Header />
+                <Cover />
+                <ServicesSection />
+                <Benefits>
+                    {benefits.map((benefit, index) => (
+                        <BenefitItem
+                            key={benefit.title}
+                            icon={benefit.icon}
+                            title={benefit.title}
+                            description={benefit.description}
+                        />
+                    ))}
+                </Benefits>
+                <About />
+                <FormSection />
+                <Footer />
+            </main>
+        </Limiter>
     )
 }
