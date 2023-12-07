@@ -10,7 +10,7 @@ export function FormSection(){
             <Form />
             <figure className="background">
                 <Image src={bg} alt='imagem de fundo' />
-                <Image src={mask} alt='máscara da imagem de fundo' />
+                {/* <Image src={mask} alt='máscara da imagem de fundo' /> */}
             </figure>
         </section>
     )
