@@ -41,17 +41,17 @@ export function Form(){
             </p>
             <form className="form">
                 <label>
-                    <MdOutlineMailOutline />
-                    <input
-                        type="text"
-                        placeholder='Digite seu e-mail'
-                    />
-                </label>
-                <label>
                     <FaRegUser />
                     <input
                         type="text"
                         placeholder='Digite seu nome'
+                    />
+                </label>
+                <label>
+                    <MdOutlineMailOutline />
+                    <input
+                        type="text"
+                        placeholder='Digite seu e-mail'
                     />
                 </label>
                 <textarea
