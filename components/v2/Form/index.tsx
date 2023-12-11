@@ -39,7 +39,7 @@ export function Form(){
             >
                 Mencione site e quais passos/processos gostaria de automatizar
             </p>
-            <form className="form">
+            <form className="form" action="https://api.staticforms.xyz/submit" method="post">
                 <label>
                     <FaRegUser />
                     <input
@@ -57,7 +57,10 @@ export function Form(){
                 <textarea
                     placeholder='Descreva o seu projeto...'>
                 </textarea>
-                <Button />
+                <button type='submit'>Solicitar Orçamento</button>
+                <input type="hidden" name="accessKey" value="bf460d11-f4fd-4a74-a2f7-66fe3bb2f025"/>
+                <input type="hidden" name="redirectTo" value='/automacao?form_send' />
+                {/* <Button /> */}
             </form>
         </section>
     )

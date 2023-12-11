@@ -12,12 +12,12 @@ export function Header(){
                 <h2>Roger Rosa</h2>
             </Link>
 
-            <div className="header_links">
-                <a href="#">
+            <div className="header_links" >
+                <a href="https://api.whatsapp.com/send?phone=5551981467566" target="_blank">
                     <FaWhatsapp />
                     WhatsApp
                 </a>
-                <Link href="#" className="orcamento">
+                <Link href="#form_container" className="orcamento">
                     Solicitar Orçamento
                 </Link>
             </div>

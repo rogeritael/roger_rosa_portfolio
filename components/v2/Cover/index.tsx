@@ -34,7 +34,7 @@ export function Cover(){
                     <InfiniteListItem label="conversores" />
                 </InfiniteList>
                 <Button />
-                <a className="mobile_whatsapp" href="#">
+                <a className="mobile_whatsapp" href="#form_container">
                     <FaWhatsapp /> WhatsApp
                 </a>
 
