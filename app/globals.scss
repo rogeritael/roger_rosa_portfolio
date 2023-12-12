@@ -5,6 +5,7 @@
     outline: none;
     text-decoration: none;
     color: #fff;
+    list-style: none;
 }
 
 span {
@@ -14,4 +15,8 @@ span {
 body, html {
     overflow-x: hidden;
     background-color: #0C0B1C;
+}
+
+:root {
+    --blue: blue;
 }
