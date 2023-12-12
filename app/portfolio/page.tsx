@@ -8,6 +8,7 @@ import { SkillsContainer } from "@/components/v1/SkillsContainer";
 import './styles.scss'
 import { Projects } from "@/components/v1/Projects";
 import { Footer } from "@/components/v1/Footer";
+import { ContactForm } from "@/components/v1/ContactForm";
 
 export default function Portfolio(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -25,10 +26,9 @@ export default function Portfolio(){
             <Cover />
             <SkillsContainer />
             <Projects />
+            <ContactForm />
             <Footer />
             {/* <FAQ /> */}
-            {/* <ContactForm /> */}
-            {/* <Footer /> */}
         </main>
     )
 }
