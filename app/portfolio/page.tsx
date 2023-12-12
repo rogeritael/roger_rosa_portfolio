@@ -9,6 +9,7 @@ import './styles.scss'
 import { Projects } from "@/components/v1/Projects";
 import { Footer } from "@/components/v1/Footer";
 import { ContactForm } from "@/components/v1/ContactForm";
+import { MobileMenu } from "@/components/v1/MobileMenu";
 
 export default function Portfolio(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -21,7 +22,7 @@ export default function Portfolio(){
 
     return(
         <main id="portfolio">
-            {/* <MobileMenu isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} /> */}
+            <MobileMenu isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen}/>
             <Header setIsMobileMenuOpen={setIsMobileMenuOpen} />
             <Cover />
             <SkillsContainer />
