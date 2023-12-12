@@ -14,9 +14,23 @@ span {
 
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     background-color: #0C0B1C;
 }
 
 :root {
-    --blue: blue;
+    // --bg: #171717;
+    --blue: #7E74F1;
+    --green: #27AE60;
+    --gray1: #171A1B;
+    --gray2: #202226;
+    --gray3: #2E2E32;
+    --gray4: #656D72;
+}
+
+p, span, h1 {
+    &::selection {
+        background-color: var(--blue);
+        color: black;
+    }
 }
