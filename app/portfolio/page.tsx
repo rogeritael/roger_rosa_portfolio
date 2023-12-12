@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Cover } from "@/components/v1/Cover";
+import { SkillsContainer } from "@/components/v1/SkillsContainer";
 
 export default function Portfolio(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -19,8 +20,7 @@ export default function Portfolio(){
             {/* <MobileMenu isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} /> */}
             <Header setIsMobileMenuOpen={setIsMobileMenuOpen} />
             <Cover />
-            {/* <Cover /> */}
-            {/* <SkillsContainer /> */}
+            <SkillsContainer />
             {/* <Projects /> */}
             {/* <FAQ /> */}
             {/* <ContactForm /> */}
