@@ -5,6 +5,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Cover } from "@/components/v1/Cover";
 import { SkillsContainer } from "@/components/v1/SkillsContainer";
+import './styles.scss'
+import { Projects } from "@/components/v1/Projects";
 
 export default function Portfolio(){
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -21,7 +23,7 @@ export default function Portfolio(){
             <Header setIsMobileMenuOpen={setIsMobileMenuOpen} />
             <Cover />
             <SkillsContainer />
-            {/* <Projects /> */}
+            <Projects />
             {/* <FAQ /> */}
             {/* <ContactForm /> */}
             {/* <Footer /> */}

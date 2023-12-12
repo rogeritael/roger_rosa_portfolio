@@ -1,9 +1,9 @@
 // import jjng from '../assets/projects/jjng.svg'
 // import pizzaria from '../assets/projects/pizza.svg'
-import quando_lanca from '../assets/projects/quando_lanca_mockup.png'
-import loopstudios from '../assets/projects/loopstudios.png'
-import skilled from '../assets/projects/skilled.png'
-import fylo from '../assets/projects/fylo.png'
+import quando_lanca from '@/assets/v1/projects/quando_lanca_mockup.png' 
+import loopstudios from '@/assets/v1/projects/loopstudios.png'
+import skilled from '@/assets/v1/projects/skilled.png'
+import fylo from '@/assets/v1/projects/fylo.png'
 
 export const projects = [
     // {
