@@ -22,7 +22,7 @@ export function Footer(){
                     <Link href="/">Termos de uso</Link>
                     <Link href="/">Política de privacidade</Link>
                 </div>
-                <Link href="/">
+                <Link href="/portfolio">
                     voltar ao topo
                     <IoIosArrowDropupCircle />
                 </Link>

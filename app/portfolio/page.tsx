@@ -1,35 +1,52 @@
 'use client'
-import { Header } from "@/components/v1/Header";
-import { useEffect, useState } from "react";
+import './styles.scss'
+import { Cover } from "@/components/v2/Cover";
+import { Header } from "@/components/v2/Header";
+import { ServicesSection } from "@/components/v2/ServicesSection/page";
+import { FormSection } from "@/components/v2/FormSection";
+import { Footer } from "@/components/v2/Footer";
+import { Benefits } from "@/components/v2/Benefits";
+import { BenefitItem } from "@/components/v2/BenefitItem";
+import { About } from '@/components/v2/About';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Cover } from "@/components/v1/Cover";
-import { SkillsContainer } from "@/components/v1/SkillsContainer";
-import './styles.scss'
-import { Projects } from "@/components/v1/Projects";
-import { Footer } from "@/components/v1/Footer";
-import { ContactForm } from "@/components/v1/ContactForm";
-import { MobileMenu } from "@/components/v1/MobileMenu";
+import { useEffect, useState } from 'react';
+import { Limiter } from '@/components/v2/Limiter';
+import { Benefit, BenefitCategory, benefits_data } from '@/src/store/db/benefits_data';
+import { useDataStore } from '@/src/store/appStore';
 
-export default function Portfolio(){
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
+export default function Automacao(){
+    // const { beneficios } = useDataStore()
+    const [benefits, setBenefits] = useState<Benefit[]>([])
+    const { devType } = useDataStore()
     useEffect(() => {
         Aos.init({
-            duration: 1500
+            // duration: 1500
         })
+
+        setBenefits(benefits_data[devType])
     },[])
 
-    return(
-        <main id="portfolio">
-            <MobileMenu isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen}/>
-            <Header setIsMobileMenuOpen={setIsMobileMenuOpen} />
-            <Cover />
-            <SkillsContainer />
-            <Projects />
-            <ContactForm />
-            <Footer />
-            {/* <FAQ /> */}
-        </main>
+    return (
+        <Limiter>
+            <main id="automation_page">
+                <Header />
+                <Cover />
+                <ServicesSection />
+                <Benefits>
+                    {benefits.map((benefit, index) => (
+                        <BenefitItem
+                            key={benefit.title}
+                            icon={benefit.icon}
+                            title={benefit.title}
+                            description={benefit.description}
+                        />
+                    ))}
+                </Benefits>
+                <About />
+                <FormSection />
+                <Footer />
+            </main>
+        </Limiter>
     )
 }

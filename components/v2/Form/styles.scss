@@ -91,9 +91,15 @@
         textarea {
             height: 150px;
             padding: 14px;
-            font-size: 13.5px;
+            font-size: 13px;
             resize: none;
-            font-family: inherit;
+            font-family: sans-serif;
+        }
+
+        .send_button {
+            background-color: #721AE7;
+            height: 40px;
+            cursor: pointer;
         }
     }
 

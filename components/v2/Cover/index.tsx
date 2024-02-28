@@ -6,17 +6,23 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import './styles.scss'
 import Image from "next/image";
+import { useState } from 'react';
+import { infinite_list } from '@/src/store/db/infinite_list';
+import { useDataStore } from '@/src/store/appStore';
+
+type DevTypeType = 'Front End' | 'Back End' | 'Full Stack'
 
 export function Cover(){
+    const { devType } = useDataStore()
+
     return(
         <section id="automation_cover">
             <div className="title_box">
                 <h1
                     data-aos="fade-up"
-                    // data-aos-delay="0"
                     data-aos-duration="1000"
                 >
-                    Precisando de <br/> uma automação/bot?
+                    Precisando de <br/> um desenvolvedor {devType}?
                 </h1>
                 <p
                     data-aos="fade-up"
@@ -27,11 +33,14 @@ export function Cover(){
                 </p>
 
                 <InfiniteList>
-                    <InfiniteListItem label="email" />
+                    {infinite_list['Front End'].map((item) => (
+                        <InfiniteListItem label={item} />
+                    ))}
+                    {/* <InfiniteListItem label="email" />
                     <InfiniteListItem label="planilhas" />
                     <InfiniteListItem label="bots" />
                     <InfiniteListItem label="scrapping" />
-                    <InfiniteListItem label="conversores" />
+                    <InfiniteListItem label="conversores" /> */}
                 </InfiniteList>
                 <Button />
                 <a className="mobile_whatsapp" href="#form_container">

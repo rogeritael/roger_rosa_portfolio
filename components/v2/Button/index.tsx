@@ -10,7 +10,7 @@ export function Button(){
             data-aos-duration="1000"    
         >
             <Link href='#form_container'>
-                Solicitar Orçamento
+                Entrar em Contato
             </Link>
         </div>
     )

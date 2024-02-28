@@ -14,7 +14,7 @@ export function Form(){
                     data-aos="flip-up"
                     data-aos-duration="500"
                 >
-                    Como Solicitar
+                    Gostaria de Entrar
                 </span>
                 <br />
                 <span
@@ -22,22 +22,23 @@ export function Form(){
                     data-aos-delay="500"
                     data-aos-duration="500"
                 >
-                    seu Orçamento
+                    Em Contato?
                 </span>
             </h2>
-            <p
+            {/* <p
                 className="bullet"
                 data-aos="fade-up"
                 data-aos-duration="1000"    
             >
                 Descreva em detalhes o que precisa ser automatizado (quais passos manuais gostaria de automatizar).
-            </p>
+                Mencione o seu nome e o seu email
+            </p>*/}
             <p
                 className="bullet"
                 data-aos="fade-up"
                 data-aos-duration="1000"    
             >
-                Mencione site e quais passos/processos gostaria de automatizar
+                Envie uma mensagem para conversarmos melhor sobre a nossa parceria futura e responderei assim que possível
             </p>
             <form className="form" action="https://api.staticforms.xyz/submit" method="post">
                 <label>
@@ -55,9 +56,9 @@ export function Form(){
                     />
                 </label>
                 <textarea
-                    placeholder='Descreva o seu projeto...'>
+                    placeholder='Escreva a sua mensagem...'>
                 </textarea>
-                <button type='submit'>Solicitar Orçamento</button>
+                <button type='submit' className='send_button'>Enviar</button>
                 <input type="hidden" name="accessKey" value="bf460d11-f4fd-4a74-a2f7-66fe3bb2f025"/>
                 <input type="hidden" name="redirectTo" value='/automacao?form_send' />
                 {/* <Button /> */}

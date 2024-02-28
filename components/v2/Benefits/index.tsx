@@ -15,7 +15,7 @@ export function Benefits({ children }: BenefitsProps){
                     data-aos="flip-up"
                     data-aos-duration="500"
                 >
-                    Quais os benefícios em
+                    Porque sou o
                 </span>
                 <br />
                 <span
@@ -23,7 +23,7 @@ export function Benefits({ children }: BenefitsProps){
                     data-aos-delay="500"
                     data-aos-duration="500"
                 >
-                    automatizar processos?
+                    o que você procura?
                 </span>
             </h2>
             <div className="benefits_container">
