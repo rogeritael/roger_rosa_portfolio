@@ -1,22 +1,23 @@
 export const services = [
     {
-        description: 'Extração, manipulação e análise de dados da internet.',
-        category: 'web scrapping'
+        description: 'Node',
     },
     {
-        description: 'Criação e manipulação de planilhas de forma automatizada.',
-        category: 'planilhas'
+        description: 'Express',
     },
     {
-        description: 'Organização e envios programados de emails.',
-        category: 'email'
+        description: 'TypeScript',
     },
     {
-        description: 'Organização e manipulação de arquivos em massa.',
-        category: 'manipulação de aquivos'
+        description: 'Docker',
     },
     {
-        description: 'Bots automatizados para interações online, desde atendimento ao cliente até processos de compra',
-        category: 'bots'
+        description: 'Arquitetura MVC',
+    },
+    {
+        description: 'SQL',
+    },
+    {
+        description: 'NoSQL',
     },
 ]

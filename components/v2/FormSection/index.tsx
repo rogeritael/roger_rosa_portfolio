@@ -8,9 +8,9 @@ export function FormSection(){
     return (
         <section id="form_section">
             <Form />
-            <figure className="background">
+            <figure className="background" data-aos="zoom-in">
                 <Image src={bg} alt='imagem de fundo' />
-                {/* <Image src={mask} alt='máscara da imagem de fundo' /> */}
+                <Image src={mask} alt='máscara da imagem de fundo' />
             </figure>
         </section>
     )

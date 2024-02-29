@@ -17,13 +17,14 @@
 }
 
 .service_item {
-    width: 220px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: #151426;
     border-radius: 8px;
     padding: 24px 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     .rounded {

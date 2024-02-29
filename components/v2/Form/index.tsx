@@ -40,7 +40,7 @@ export function Form(){
             >
                 Envie uma mensagem para conversarmos melhor sobre a nossa parceria futura e responderei assim que possível
             </p>
-            <form className="form" action="https://api.staticforms.xyz/submit" method="post">
+            <form className="form" action="https://api.staticforms.xyz/submit" method="post" data-aos="fade-up">
                 <label>
                     <FaRegUser />
                     <input

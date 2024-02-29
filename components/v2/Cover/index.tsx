@@ -9,11 +9,13 @@ import Image from "next/image";
 import { useState } from 'react';
 import { infinite_list } from '@/src/store/db/infinite_list';
 import { useDataStore } from '@/src/store/appStore';
+import { cover_text } from '@/src/store/db/cover_text';
 
 type DevTypeType = 'Front End' | 'Back End' | 'Full Stack'
 
 export function Cover(){
     const { devType } = useDataStore()
+    const [text, setText] = useState(cover_text[devType])
 
     return(
         <section id="automation_cover">
@@ -29,19 +31,19 @@ export function Cover(){
                     data-aos-delay="200"
                     data-aos-duration="1000"
                 >
-                    Como profissional experiente, desenvolvo soluções de automação totalmente adaptadas às suas necessidades. Seja para simplificar processos complexos ou otimizar fluxos de trabalho, aumentando a sua produtividade.
+                    {text}
                 </p>
 
-                <InfiniteList>
+                {/* <InfiniteList>
                     {infinite_list['Front End'].map((item) => (
                         <InfiniteListItem key={item} label={item} />
                     ))}
-                    {/* <InfiniteListItem label="email" />
-                    <InfiniteListItem label="planilhas" />
-                    <InfiniteListItem label="bots" />
-                    <InfiniteListItem label="scrapping" />
-                    <InfiniteListItem label="conversores" /> */}
-                </InfiniteList>
+                </InfiniteList> */}
+                {/* <InfiniteListItem label="email" />
+                <InfiniteListItem label="planilhas" />
+                <InfiniteListItem label="bots" />
+                <InfiniteListItem label="scrapping" />
+                <InfiniteListItem label="conversores" /> */}
                 <Button />
                 <a className="mobile_whatsapp" href="#form_container">
                     <FaWhatsapp /> WhatsApp
@@ -51,13 +53,11 @@ export function Cover(){
             <div className="background">
                 <Image src={cover} alt="capa de fundo" />
             </div>
-            <InfiniteList className='infinite_list_mobile'>
-                <InfiniteListItem label="email" />
-                <InfiniteListItem label="planilhas" />
-                <InfiniteListItem label="bots" />
-                <InfiniteListItem label="scrapping" />
-                <InfiniteListItem label="conversores" />
-            </InfiniteList>
+            {/* <InfiniteList className='infinite_list_mobile'>
+                {infinite_list['Front End'].map((item) => (
+                    <InfiniteListItem key={item} label={item} />
+                ))}
+            </InfiniteList> */}
         </section>
     )
 }

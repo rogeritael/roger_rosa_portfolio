@@ -18,7 +18,7 @@ export function Header(){
                     WhatsApp
                 </a>
                 <Link href="#form_container" className="orcamento">
-                    Solicitar Orçamento
+                    Entrar em Contato
                 </Link>
             </div>
         </header>

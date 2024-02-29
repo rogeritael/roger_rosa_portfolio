@@ -1,5 +1,8 @@
 import './styles.scss'
 import { UserCard } from "../UserCard";
+import { useState } from 'react';
+import { about } from '@/src/store/db/about';
+import { useDataStore } from '@/src/store/appStore';
 
 const userInfos = {
     subtitle: "Sobre mim!",
@@ -12,6 +15,8 @@ const userInfos = {
 }
 
 export function About(){
+    const { devType } = useDataStore()
+    const [bullets, setBullets] = useState(about[devType])
     return(
         <section id="about">
             <h2 >
@@ -24,7 +29,6 @@ export function About(){
                 </span>
                 <br/>
                 <span
-                    // style={{ display: 'inline-block' }}
                     data-aos="flip-up"
                     data-aos-delay="500"
                     data-aos-duration="500"
@@ -35,7 +39,7 @@ export function About(){
             <UserCard
                 subtitle={userInfos.subtitle}
                 title={userInfos.title}
-                bullets={userInfos.bullets}
+                bullets={bullets}
             />
         </section>
     )

@@ -15,7 +15,7 @@ export function ServicesSection(){
                     data-aos="flip-up"
                     data-aos-duration="1000"
                 >
-                    Descubra os serviços que
+                    Quais Technologias Eu
                 </span>
                 <br />
                 <span
@@ -23,7 +23,7 @@ export function ServicesSection(){
                     data-aos-delay="500"
                     data-aos-duration="1000"
                 >
-                    desenvolvemos por aqui
+                    Mais Utilizo
                 </span>
             </h2>
             
@@ -33,7 +33,6 @@ export function ServicesSection(){
                         key={index}
                         position={`0${index+1}`}
                         description={service.description}
-                        category={service.category}
                     />
                 ))}
             </Slider>
