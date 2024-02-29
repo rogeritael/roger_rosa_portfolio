@@ -34,7 +34,7 @@ export function Cover(){
 
                 <InfiniteList>
                     {infinite_list['Front End'].map((item) => (
-                        <InfiniteListItem label={item} />
+                        <InfiniteListItem key={item} label={item} />
                     ))}
                     {/* <InfiniteListItem label="email" />
                     <InfiniteListItem label="planilhas" />
