@@ -32,7 +32,6 @@ export default function Automacao(){
             <main id="automation_page">
                 <Header />
                 <Cover />
-                <ServicesSection />
                 <Benefits>
                     {benefits.map((benefit, index) => (
                         <BenefitItem
@@ -44,6 +43,7 @@ export default function Automacao(){
                     ))}
                 </Benefits>
                 <About />
+                <ServicesSection />
                 <FormSection />
                 <Footer />
             </main>
