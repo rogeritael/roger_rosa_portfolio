@@ -1,0 +1,23 @@
+#my_projects {
+    padding: 40px 24px;
+
+    .section_title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 62px;
+    }
+
+    .slider {
+        width: 100%;
+        max-width: 1440px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+        .rail {
+            width: fit-content;
+            display: flex;
+            gap: 32px;
+            margin-bottom: 20px;
+        }
+    }
+}

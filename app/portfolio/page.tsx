@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 import { Limiter } from '@/components/v2/Limiter';
 import { Benefit, BenefitCategory, benefits_data } from '@/src/store/db/benefits_data';
 import { useDataStore } from '@/src/store/appStore';
+import { MyProjects } from '@/components/v2/MyProjects';
 
 export default function Automacao(){
     // const { beneficios } = useDataStore()
@@ -44,6 +45,7 @@ export default function Automacao(){
                 </Benefits>
                 <About />
                 <ServicesSection />
+                <MyProjects />
                 <FormSection />
                 <Footer />
             </main>
