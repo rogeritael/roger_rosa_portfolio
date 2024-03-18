@@ -19,6 +19,18 @@ export default function RootLayout({
 
   return (
     <html lang="pt-br">
+      <header>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+      </header>
       <body className={inter.className}>{children}</body>
     </html>
   )
